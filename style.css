@@ -27,7 +27,7 @@ header{
     font-size: 64px;
     font-weight: 700;
 }
-.header-details a{
+.watch-link{
     /* display: flex;
     align-items: center; */
     background-color: #E02C6D;
@@ -42,3 +42,105 @@ header{
     width: 100%;
 }
 
+/* blog posts  */
+
+section.blog-posts{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 210px;
+    padding-top: 70px;
+}
+.blog-container{
+    /* padding-left: 180px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+article{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+article img{
+    width: 100%;
+}
+
+/* article */
+.player-name{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+.player-details{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* post highlight */
+.post-highlight{
+    display: flex;
+    padding-right:156px;
+    padding-left: 182px;
+
+    padding-top: 165px;
+    padding-bottom: 158px;
+    
+}
+.post-highlight-details , .post-highlight-image{
+    width: 50%;
+}
+.post-highlight-details{
+
+}
+.post-highlight-title{
+    font-weight: 700;
+    font-size: 48px;
+    color: #0A0826;
+}
+.post-highlight-image{
+
+}
+.post-highlight-details{
+    
+    font-weight: 400;
+    font-size: 16px;
+    
+    color: #6C6C6C;
+    
+    
+}
+.post-highlight-image img{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    padding-bottom: 63px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+    margin: 20px 0px;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-icons img{
+    width: 32px;
+    height: 32px;
+}
+.footer-copyright{
+    text-align:center;
+}
