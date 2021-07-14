@@ -192,6 +192,67 @@ footer{
 }
 
 
+/* video highlight styles */
+.league-section{
+    padding-left: 156px;
+    padding-right: 140px;
+    display: flex;
+
+}
+.league-table{
+    width: 33%;
+}
+.video-highlight-container{
+    width: 77%;
+    position: relative;
+}
+.video-highlight{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px #7ca3b9d9;
+    border-radius: 10px;
+    
+    
+}
+.video-highlight img{
+    opacity: 0.5;
+    border-radius: 6px;
+    left:0;
+    top :0;
+    z-index: 10;
+    width: 100%;
+    height: 400px;
+}
+.video-highlight iframe{
+    position: absolute;
+    z-index: 11;
+    border-radius: 10px;
+}
+/* League Table */
+.team-position-container{
+    box-shadow: 0 0 50px rgba(85, 76, 76, 0.301);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    height: 390px;
+}
+.team-position{
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(3, 1fr);
+    color: #6C6C6C;
+    font-size: 14px;
+    padding: 4px 0 4px 1px;
+    border-bottom: 1px solid #6e65652f;
+}
+.team-head{
+    display: grid;
+    grid-template-columns: 5fr repeat(3, 1fr);
+    font-weight: 700;
+}
+
+
 /* -----------------------
     Responsive Styles
 -------------------------*/
