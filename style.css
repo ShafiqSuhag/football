@@ -33,6 +33,54 @@ body{
         header styles
 ----------------------------*/
 
+/* navigation menu  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px;
+    padding-right: 140px;
+    padding-top: 42px;
+}
+.login-button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.login-button:hover{
+    color: #E02C6D;
+    background-color: #ffffff;
+    
+}
+.main-menu-container ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+.menu-padding{
+    padding-left: 36px;
+}
+.main-menu-container li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu{
+    text-decoration: none;
+    color: white;
+}
+.main-menu:hover {
+    text-decoration: none;
+    color: #E02C6D;
+}
+
+/* header content start  */
 header{
     background-color: #2D25A0;
 }
@@ -301,11 +349,19 @@ footer{
     padding: 0;
 
 }
+
 .photo img{
-    border-bottom: 4px solid white;  
+    border-radius: 6px;
+    border-bottom: 4px solid white;
+     
+    
 }
 .photo:hover img{
-    border-bottom: 4px solid #2D25A0;       
+    transform: translate(0, -10px);
+    transition: transform 500ms;
+    padding-bottom: 7px;
+    border-bottom: 4px solid #2D25A0;   
+    position: absolute;    
 }
 
 
@@ -314,6 +370,41 @@ footer{
 -------------------------*/
 /* media quireies for phone */
 @media screen and (max-width:688px) {
+
+    nav{
+        padding-top: 33px;
+        padding-left: 16px;
+        padding-right: 21px;
+        padding-bottom: 46px;
+    }
+    .mobile-menu{
+        color: white;
+    }
+    .main-menu-container ul{
+        display: none;
+    }
+    .main-menu-container:hover ul{
+        position: absolute;
+        display: block;
+        width: 90%;
+        background-color: white;
+        margin: 10px 0 0 0;
+        padding: 40px 0 50px 0;
+    }
+    .main-menu-container ul li{
+        border-bottom: 1px solid #6e65652f;
+        border-left: 2px solid #6e65652f;
+    }
+    
+    .menu-padding{
+        padding-left: 0;
+    }
+    .main-menu{
+        color: black;
+        padding-left: 10px;
+       
+    }
+    
 
     /* header section responsiveness */
 
