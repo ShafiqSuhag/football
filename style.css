@@ -20,6 +20,13 @@ body{
     text-decoration: none;
     
 }
+.fa-arrow-right{
+    margin-left: 8px;
+}
+.watch-link:hover .fa-arrow-right{
+    transform: translate(10px) rotate(180deg);
+    transition: transform 1s;
+}
 
 
 /* --------------------------
@@ -157,6 +164,10 @@ footer{
     padding-bottom: 20px;
    
 }
+.footer-icons a:hover {
+    border: 1px solid #10437A;
+    transition: border 1s;
+}
 .footer-icons a{
     text-decoration: none;
     font-size: 20px;
@@ -167,6 +178,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center; 
+    border: 1px solid #ffffff ;
 }
 /* font-awsome icon */
 .footer-icons .fab{
