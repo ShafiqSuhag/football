@@ -179,3 +179,104 @@ footer{
     text-align:center;
 }
 
+
+/* -----------------------
+    Responsive Styles
+-------------------------*/
+/* media quireies for phone */
+@media screen and (max-width:688px) {
+
+    /* header section responsiveness */
+
+    .header-container{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+    .header-details, .header-image {
+        width: 100%;
+       
+    }
+    .header-image img{
+        padding-left: 16px;
+        width: 329px;
+        height: 260px;
+    }
+    .header-details{
+        padding-left: 16px;
+        margin-bottom: 50px;
+    }
+    .header-container h2{
+        font-size: 36px;
+    }
+    
+    /* blog section responsiveness */
+    .blog-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    section.blog-posts{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 47px;
+    }
+    article img{
+        width: 300px;
+        height: 256px;
+        margin-bottom: 16px;
+    }
+    article h3{
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .player-details{
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+    /* post highlight */
+    .post-highlight{
+        padding: 60px 15px 43px 15px;
+        flex-direction: column;
+    }
+    .post-highlight-details , .post-highlight-image{
+        width: 100%;
+        /* display: flex; */
+        /* flex-direction: column;
+        justify-content: center; */
+    }
+    
+    .post-highlight-title{
+        font-size: 30px;
+        padding-bottom: 8px;
+    }
+    .post-highlight-description{
+        font-size: 16px;
+        padding: 0 0 24px 0 ;
+    }
+    .watch-link{
+        font-weight: 400;
+    }
+   
+    .post-highlight-image{
+        margin-top: 29px;
+    }
+
+    .footer-logo img{
+        width: 91%;
+        margin: 0;
+        padding: 0 15px 29px 15px ;
+    }
+    .footer-icons{
+        padding-top: 0;
+    }
+}
+/* media quireies for tab  */
+@media  screen and (min-width:689px) and (max-width:992px) {
+    
+}
