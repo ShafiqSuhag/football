@@ -275,6 +275,31 @@ footer{
     border-radius: 10px;
 }
 
+.photo-gallary-container{
+    padding: 156px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo-gallery-title{
+    text-align: left;
+}
+.photo-gallary{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+   
+}
+.photo-gallary img{
+    width: 245px;
+    height: 245px;
+    padding: 0;
+}
+
 
 /* -----------------------
     Responsive Styles
@@ -388,6 +413,48 @@ footer{
     .video-highlight-container {
         display: none;
     }
+
+
+        
+    .photo-gallary-container{
+        
+        padding-top: 43px;
+        padding-bottom: 43px;
+        /* margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    }
+    .photo-gallery-title{
+        /* text-align: left; */
+    }
+    .photo-gallary{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 5px;
+        row-gap: 5px; */
+    
+    }
+    .photo-gallary img{
+        width: 190px;
+        height: 190px;
+        
+    }
+    /*
+    header , .post-highlight,  .photo-gallary-container,  .league-section, footer
+     section.blog-posts {
+        display: none;
+    }
+    */
+
+      /* {
+        display: none;
+    } */
+   
+    
+
 }
 /* media quireies for tab  */
 @media  screen and (min-width:689px) and (max-width:992px) {
