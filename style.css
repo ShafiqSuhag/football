@@ -191,20 +191,64 @@ footer{
     text-align:center;
 }
 
+/* ------------------------------------------------------------------------------
+                                Extra Sections Styles
+------------------------------------------------------------------------------ */
 
-/* video highlight styles */
 .league-section{
     padding-left: 156px;
-    padding-right: 140px;
+    padding-right: 156px;
     display: flex;
-
 }
+
+
+/* League Table */
 .league-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33%;
 }
+.team-position-container{
+    width: 100%;
+    box-shadow: 0 0 50px rgba(85, 76, 76, 0.301);
+    border-radius: 10px;
+    margin: 0 10px 0 10px;    
+}
+.team-position-head{
+    display: grid;
+    grid-template-columns: 6fr repeat(3, 1fr);
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6e65652f;
+}
+.team-position{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr repeat(3, 1fr);
+    color: #6C6C6C;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6e65652f;
+
+}
+/* team position inside text  */
+.no, .team{
+    padding-left: 5px;
+}
+.win, .lost{
+    text-align: center;
+}
+.gb{
+    text-align: center;
+}
+
+
+/* video highlight styles */
 .video-highlight-container{
     width: 77%;
-    position: relative;
+    position: relative; /* use this postion to hold the position of iframe properly over image */
 }
 .video-highlight{
    
@@ -221,7 +265,7 @@ footer{
     border-radius: 6px;
     left:0;
     top :0;
-    z-index: 10;
+    z-index: 10;        /* position behind iframe */
     width: 100%;
     height: 400px;
 }
@@ -229,27 +273,6 @@ footer{
     position: absolute;
     z-index: 11;
     border-radius: 10px;
-}
-/* League Table */
-.team-position-container{
-    box-shadow: 0 0 50px rgba(85, 76, 76, 0.301);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 0 10px 0 10px;
-    height: 390px;
-}
-.team-position{
-    display: grid;
-    grid-template-columns: 1fr 4fr repeat(3, 1fr);
-    color: #6C6C6C;
-    font-size: 14px;
-    padding: 4px 0 4px 1px;
-    border-bottom: 1px solid #6e65652f;
-}
-.team-head{
-    display: grid;
-    grid-template-columns: 5fr repeat(3, 1fr);
-    font-weight: 700;
 }
 
 
@@ -347,6 +370,23 @@ footer{
     }
     .footer-icons{
         padding-top: 0;
+    }
+
+    /* ------------------------------------------------------------------------------
+                                Extra Sections Styles : Responsiveness
+    ------------------------------------------------------------------------------ */
+    .league-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .league-table{
+        width: 100%;
+    }
+
+    .video-highlight-container {
+        display: none;
     }
 }
 /* media quireies for tab  */
