@@ -1,4 +1,8 @@
 
+/* 
+    Author name : Shafiq Suhag
+    Author URL : https://github.com/shafiqSuhag
+ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* common styles */
@@ -80,6 +84,10 @@ nav{
     color: #E02C6D;
 }
 
+.mobile-menu{
+    display: none;
+}
+
 /* header content start  */
 header{
     background-color: #2D25A0;
@@ -106,8 +114,14 @@ header{
     font-weight: 700;
     margin: 0 0 27px 0;
 }
-
-
+.header-image{
+    transition: 400ms ;
+}
+.header-image:hover{
+    /* border: 1px solid red; */
+    transform: translate(-100px, -100px) rotate(10deg);
+    transition: 400ms ;
+}
 .header-image img{
     width: 100%;
 }
@@ -378,6 +392,7 @@ footer{
         padding-bottom: 46px;
     }
     .mobile-menu{
+        display: block;
         color: white;
     }
     .main-menu-container ul{
@@ -422,6 +437,7 @@ footer{
         width: 329px;
         height: 260px;
     }
+    
     .header-details{
         padding-left: 16px;
         margin-bottom: 50px;
