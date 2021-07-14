@@ -5,7 +5,9 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-/* common styles */
+/* ----------------------------------------------------
+                    Common Styles
+----------------------------------------------------*/
 body{
     /* reset styles */
     margin: 0;
@@ -13,8 +15,7 @@ body{
     font-family: 'Poppins', sans-serif; 
 }
 
-.watch-link{
-    
+.watch-link{    
     background-color: #E02C6D;
     margin-top: 10px;
     padding: 10px 24px;
@@ -22,7 +23,6 @@ body{
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;
-    
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -33,9 +33,9 @@ body{
 }
 
 
-/* --------------------------
-        header styles
-----------------------------*/
+/* ----------------------------------------------------
+                    Navigation
+------------------------------------------------------*/
 
 /* navigation menu  */
 nav{
@@ -65,7 +65,6 @@ nav{
     justify-content: center;
     margin: 0;
     padding: 0;
-
 }
 .menu-padding{
     padding-left: 36px;
@@ -88,7 +87,10 @@ nav{
     display: none;
 }
 
-/* header content start  */
+
+/* --------------------------------------------------------
+                Header Content Section
+-------------------------------------------------------- */
 header{
     background-color: #2D25A0;
 }
@@ -118,7 +120,6 @@ header{
     transition: 400ms ;
 }
 .header-image:hover{
-    /* border: 1px solid red; */
     transform: translate(-100px, -100px) rotate(10deg);
     transition: 400ms ;
 }
@@ -126,9 +127,10 @@ header{
     width: 100%;
 }
 
-/* --------------------------
-        blog posts
-----------------------------*/
+
+/* ----------------------------------------------------
+                    Blog Posts Section
+--------------------------------------------------------*/
 
 section.blog-posts{
     
@@ -165,9 +167,10 @@ article img{
     font-weight: 400;
 }
 
-/* -----------------------
-    post highlight
-------------------------- */
+
+/* ----------------------------------------------
+            Post Highlight Section 
+------------------------------------------------ */
 .post-highlight{
     display: flex;
     padding-right:156px;
@@ -204,9 +207,11 @@ article img{
     width: 100%;
 }
 
-/* ------------------------
-        footer
---------------------------*/
+
+
+/* ------------------------------------------------
+                    FOOTER STYLES
+--------------------------------------------------*/
 footer{
     padding-bottom: 63px;
 }
@@ -242,6 +247,7 @@ footer{
     align-items: center; 
     border: 1px solid #ffffff ;
 }
+
 /* font-awsome icon */
 .footer-icons .fab{
     color:#969BAB;   
@@ -253,9 +259,15 @@ footer{
     text-align:center;
 }
 
+
 /* ------------------------------------------------------------------------------
                                 Extra Sections Styles
 ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------ 
+                    League Section
+------------------------------------------------ */
+
 
 .league-section{
     padding-left: 156px;
@@ -307,20 +319,18 @@ footer{
 }
 
 
-/* video highlight styles */
+/*             video highlight Section
+------------------------------------------------*/
 .video-highlight-container{
     width: 77%;
     position: relative; /* use this postion to hold the position of iframe properly over image */
 }
 .video-highlight{
-   
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 12px #7ca3b9d9;
-    border-radius: 10px;
-    
-    
+    border-radius: 10px;   
 }
 .video-highlight img{
     opacity: 0.5;
@@ -337,6 +347,9 @@ footer{
     border-radius: 10px;
 }
 
+/* ------------------------------------------------
+                Photo Gallery Section 
+------------------------------------------------*/
 .photo-gallary-container{
     padding: 156px;
     margin-top: 30px;
@@ -379,18 +392,28 @@ footer{
 }
 
 
-/* -----------------------
-    Responsive Styles
--------------------------*/
+/* -----------------------------------------------------------------------
+                    Responsive Styles
+-----------------------------------------------------------------------*/
+
+
 /* media quireies for phone */
 @media screen and (max-width:688px) {
 
+    /* common style  */
+    .watch-link{
+        font-weight: 400;
+    }
+
+    /* nav menu styels */
     nav{
         padding-top: 33px;
         padding-left: 16px;
         padding-right: 21px;
         padding-bottom: 46px;
     }
+    
+    /* mobile menu */
     .mobile-menu{
         display: block;
         color: white;
@@ -446,6 +469,7 @@ footer{
         font-size: 36px;
     }
     
+
     /* blog section responsiveness */
     .blog-container{
         grid-template-columns: repeat(1,1fr);
@@ -475,6 +499,7 @@ footer{
         margin-top: 0;
         margin-bottom: 18px;
     }
+
     /* post highlight */
     .post-highlight{
         padding: 60px 15px 43px 15px;
@@ -482,9 +507,6 @@ footer{
     }
     .post-highlight-details , .post-highlight-image{
         width: 100%;
-        /* display: flex; */
-        /* flex-direction: column;
-        justify-content: center; */
     }
     
     .post-highlight-title{
@@ -495,14 +517,50 @@ footer{
         font-size: 16px;
         padding: 0 0 24px 0 ;
     }
-    .watch-link{
-        font-weight: 400;
-    }
-   
+       
     .post-highlight-image{
         margin-top: 29px;
     }
 
+
+
+    /* ------------------------------------------------------------------------------
+                                Extra Sections Styles : Responsiveness
+    ------------------------------------------------------------------------------ */
+    /* league section styles */
+    .league-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .league-table{
+        width: 100%;
+    }
+    /* video highlight styles */
+    .video-highlight-container{
+        width: 90%;
+        position: relative;
+        padding-top: 43px;
+    }
+    .video-highlight iframe{
+        width: 95%;
+    }
+    /* photo galler */
+    .photo-gallary-container{
+        padding-top: 43px;
+        padding-bottom: 43px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .photo-gallary{
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .photo-gallary img{
+        width: 175px;
+        height: 175px;
+    }
+
+    /* Footer Responsive */
     .footer-logo img{
         width: 91%;
         margin: 0;
@@ -512,68 +570,4 @@ footer{
         padding-top: 0;
     }
 
-    /* ------------------------------------------------------------------------------
-                                Extra Sections Styles : Responsiveness
-    ------------------------------------------------------------------------------ */
-    .league-section{
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .league-table{
-        width: 100%;
-    }
-
-    .video-highlight-container {
-        display: none;
-    }
-
-
-        
-    .photo-gallary-container{
-        
-        padding-top: 43px;
-        padding-bottom: 43px;
-        padding-left: 20px;
-        padding-right: 20px;
-        
-    }
-    .photo-gallery-title{
-        /* text-align: left; */
-    }
-    .photo-gallary{
-        /* display: grid; */
-        grid-template-columns: repeat(2, 1fr);
-        /* column-gap: 5px;
-        row-gap: 5px; */
-    
-    }
-    .photo-gallary img{
-        width: 175px;
-        height: 175px;
-        
-        
-    }
-    
-    /*
-    header , .post-highlight,  .photo-gallary-container,  .league-section, footer
-     section.blog-posts {
-        display: none;
-    }
-    */
-
-      /* .photo-gallary-container,  .league-section, footer {
-        display: none;
-    }
-    section.blog-posts {
-        display: none;
-    } */
-   
-    
-
-}
-/* media quireies for tab  */
-@media  screen and (min-width:689px) and (max-width:992px) {
-    
 }
